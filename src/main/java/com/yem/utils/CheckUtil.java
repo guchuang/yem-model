@@ -5,10 +5,10 @@ package com.yem.utils;
 import org.springframework.util.StringUtils;
 
 import com.alibaba.fastjson.JSONObject;
+import com.yem.common.BaseMsgRequest;
+import com.yem.common.BaseMsgResponse;
 import com.yem.constant.Constants;
-import com.yem.request.BaseMsgRequest;
 import com.yem.request.QueryYemMemberRequest;
-import com.yem.response.BaseMsgResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

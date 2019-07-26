@@ -2,7 +2,7 @@ package com.yem.entity;
 
 import java.util.Date;
 
-import com.yem.serializable.IModel;
+import com.yem.common.IModel;
 
 import lombok.Data;
 

@@ -2,7 +2,7 @@ package com.yem.dto;
 
 import java.util.Date;
 
-import com.yem.entity.Page;
+import com.yem.common.Page;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -22,7 +22,7 @@ public class YemRoleDTO extends Page{
 
     private String roleName;
 
-    private Boolean valid;
+    private String valid;
 
     private Date createTime;
 

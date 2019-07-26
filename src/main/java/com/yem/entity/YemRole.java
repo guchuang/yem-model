@@ -2,7 +2,7 @@ package com.yem.entity;
 
 import java.util.Date;
 
-import com.yem.serializable.IModel;
+import com.yem.common.IModel;
 
 import lombok.Data;
 
@@ -20,7 +20,7 @@ public class YemRole implements IModel {
 
     private String roleName;
 
-    private Boolean valid;
+    private String valid;
 
     private Date createTime;
 

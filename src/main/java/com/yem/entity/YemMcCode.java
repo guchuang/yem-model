@@ -1,6 +1,7 @@
 package com.yem.entity;
 
-import com.yem.serializable.IModel;
+import com.yem.common.IModel;
+
 import lombok.Data;
 
 @Data

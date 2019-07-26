@@ -3,6 +3,7 @@ package com.yem.response;
 
 import java.util.List;
 
+import com.yem.common.BaseMsgResponse;
 import com.yem.entity.YemUser;
 
 import lombok.Data;

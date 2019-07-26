@@ -3,7 +3,7 @@ package com.yem.dto;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.yem.entity.Page;
+import com.yem.common.Page;
 
 public class YemOrderDTO extends Page{
     /**

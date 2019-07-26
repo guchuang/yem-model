@@ -2,7 +2,7 @@ package com.yem.entity;
 
 import java.util.Date;
 
-import com.yem.serializable.IModel;
+import com.yem.common.IModel;
 
 import lombok.Data;
 
@@ -16,6 +16,8 @@ public class YemSubscribe implements IModel {
 
 	private String subscribeId;
 
+    private Long subscribeCode;
+
     private Long memberCode;
 
     private Long serverCode;
@@ -26,7 +28,7 @@ public class YemSubscribe implements IModel {
 
     private String remark;
 
-    private Boolean valid;
+    private String valid;
 
     private Date createTime;
 

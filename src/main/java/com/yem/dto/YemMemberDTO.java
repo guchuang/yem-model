@@ -2,7 +2,7 @@ package com.yem.dto;
 
 import java.util.Date;
 
-import com.yem.entity.Page;
+import com.yem.common.Page;
 
 public class YemMemberDTO extends Page{
 

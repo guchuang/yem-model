@@ -1,6 +1,8 @@
 package com.yem.response;
 
 
+import com.yem.common.BaseMsgResponse;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

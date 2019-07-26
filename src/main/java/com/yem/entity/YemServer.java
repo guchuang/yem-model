@@ -3,7 +3,7 @@ package com.yem.entity;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.yem.serializable.IModel;
+import com.yem.common.IModel;
 
 import lombok.Data;
 
@@ -25,7 +25,7 @@ public class YemServer implements IModel {
 
     private String remark;
 
-    private Boolean valid;
+    private String valid;
 
     private Date createTime;
 

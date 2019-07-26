@@ -1,5 +1,6 @@
 package com.yem.request;
 
+import com.yem.common.BaseMsgRequest;
 import com.yem.response.ModifyYemMemberResponse;
 import com.yem.utils.BizData;
 

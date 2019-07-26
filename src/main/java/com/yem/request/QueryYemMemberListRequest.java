@@ -2,6 +2,7 @@ package com.yem.request;
 
 import java.util.Date;
 
+import com.yem.common.BaseMsgRequest;
 import com.yem.response.QueryYemMemberListResponse;
 import com.yem.utils.BizData;
 
