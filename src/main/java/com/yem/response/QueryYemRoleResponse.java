@@ -1,7 +1,10 @@
 package com.yem.response;
 
 
+import java.util.List;
+
 import com.yem.common.BaseMsgResponse;
+import com.yem.entity.YemPermission;
 import com.yem.entity.YemRole;
 
 import lombok.Data;
@@ -17,4 +20,6 @@ public class QueryYemRoleResponse extends BaseMsgResponse{
 	private static final long serialVersionUID = -3795746002441873947L;
 	
 	private YemRole yemRole;
+	
+	private List<YemPermission> permissions;
 }

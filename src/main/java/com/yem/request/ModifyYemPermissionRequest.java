@@ -27,10 +27,10 @@ public class ModifyYemPermissionRequest extends BaseMsgRequest<ModifyYemPermissi
 	private String method;
 
 	@BizData(isNotNull=false, fixLength=14, description="权限前缀地址")
-	private Long zuulPerfix;
+	private String zuulPrefix;
 
 	@BizData(isNotNull=false, maxLength=1, description="服务前缀地址")
-	private String serverPerfix;
+	private String serverPrefix;
 
 	@BizData(isNotNull=false, fixLength=11, description="请求地址")
 	private String uri;

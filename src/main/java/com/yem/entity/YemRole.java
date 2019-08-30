@@ -22,6 +22,8 @@ public class YemRole implements IModel {
 
     private String valid;
 
+    private String description;
+
     private Date createTime;
 
     private Long createBy;

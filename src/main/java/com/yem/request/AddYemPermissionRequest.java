@@ -25,10 +25,10 @@ public class AddYemPermissionRequest extends BaseMsgRequest<AddYemPermissionResp
 	private String method;
 
 	@BizData(isNotNull=false, fixLength=14, description="门店编码", regexExpression=ValidatorUtils.REGEX_NUMBER)
-	private Long zuulPerfix;
+	private String zuulPrefix;
 
 	@BizData(isNotNull=false, maxLength=1, description="性别", regexExpression=ValidatorUtils.REGEX_NUMBER)
-	private String serverPerfix;
+	private String serverPrefix;
 
 	@BizData(isNotNull=false, fixLength=11, description="手机号", regexExpression=ValidatorUtils.REGEX_MOBILE)
 	private String uri;

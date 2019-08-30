@@ -1,5 +1,7 @@
 package com.yem.request;
 
+import java.util.List;
+
 import com.yem.common.BaseMsgRequest;
 import com.yem.response.ModifyYemRoleResponse;
 import com.yem.utils.BizData;
@@ -26,6 +28,12 @@ public class ModifyYemRoleRequest extends BaseMsgRequest<ModifyYemRoleResponse>{
 	
 	@BizData(isNotNull=false, maxLength=1, description="是否有效", regexExpression=ValidatorUtils.REGEX_NUMBER)
 	private String valid;
+
+	@BizData(isNotNull=false, maxLength=100, description="角色描述")
+	private String description;
+
+	@BizData(isNotNull=false, maxLength=1000, description="权限数组",supportList=true)
+	private List<Long> permissions;
 
 	@Override
 	public Class<ModifyYemRoleResponse> responseMsgBodyClass() {

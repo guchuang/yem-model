@@ -1,5 +1,7 @@
 package com.yem.request;
 
+import java.util.List;
+
 import com.yem.common.BaseMsgRequest;
 import com.yem.response.ModifyYemMemberResponse;
 import com.yem.utils.BizData;
@@ -19,7 +21,7 @@ public class ModifyYemUserRequest extends BaseMsgRequest<ModifyYemMemberResponse
 	private static final long serialVersionUID = 2141720282873832039L;
 
 	@BizData(isNotNull=true, fixLength=14, description="用户编码", regexExpression=ValidatorUtils.REGEX_NUMBER)
-	private String userCode;
+	private Long userCode;
 
 	@BizData(isNotNull=false, maxLength=20, description="会员名称")
 	private String userName;
@@ -41,6 +43,9 @@ public class ModifyYemUserRequest extends BaseMsgRequest<ModifyYemMemberResponse
 
 	@BizData(isNotNull=false, maxLength=50, description="是否有效", regexExpression=ValidatorUtils.REGEX_NUMBER)
 	private String valid;
+
+	@BizData(isNotNull=false, maxLength=500, description="角色列表", supportList=true)
+	private List<Long> roles;
 
 	@Override
 	public Class<ModifyYemMemberResponse> responseMsgBodyClass() {

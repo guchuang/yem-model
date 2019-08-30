@@ -25,7 +25,7 @@ public class AddYemShopRequest extends BaseMsgRequest<AddYemShopResponse>{
 	private String province;
 
 	@BizData(isNotNull=false, fixLength=14, description="城市")
-	private Long city;
+	private String city;
 
 	@BizData(isNotNull=false, maxLength=1, description="区县")
 	private String county;

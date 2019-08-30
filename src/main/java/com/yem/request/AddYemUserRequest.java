@@ -1,5 +1,7 @@
 package com.yem.request;
 
+import java.util.List;
+
 import com.yem.common.BaseMsgRequest;
 import com.yem.response.AddYemMemberResponse;
 import com.yem.utils.BizData;
@@ -39,6 +41,9 @@ public class AddYemUserRequest extends BaseMsgRequest<AddYemMemberResponse>{
 
 	@BizData(isNotNull=false, maxLength=50, description="是否有效", regexExpression=ValidatorUtils.REGEX_NUMBER)
 	private String valid;
+
+	@BizData(isNotNull=false, maxLength=500, description="角色列表", supportList=true)
+	private List<Long> roles;
 
 	@Override
 	public Class<AddYemMemberResponse> responseMsgBodyClass() {
